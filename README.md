@@ -5,7 +5,7 @@
 //Array:
 let minhaArray = ['banana', 'abacaxi', 'laranja', 'maçã', 'uva'];
 ```
--	## Listar:
+-	## Listar: for ou forEach
 
 ### Usando o "for" para acessar cada item da Array.
 ```js
@@ -19,7 +19,7 @@ minhaArray.forEach(function(minhaArray) {
    console.log(minhaArray);
 });
 ```
--	## Listar em ordem alfabética:
+-	## Listar em ordem alfabética: sort
 ```js
 minhaArray.sort();
 
@@ -27,35 +27,54 @@ for (let i = 0; i < minhaArray.length; i++) {
   console.log(minhaArray[i]);
 }
 ```
--	## Adicionar (ultimo):
+-	## Adicionar (ultimo): push
 ```js
 minhaArray.push('melancia');
 console.log(minhaArray);
 ```
--	## Adicionar (index):
+-	## Adicionar (index): splice
 
 ### No index (2), removendo (0) itens, adiciona o item ('kiwi').
 ```js
 minhaArray.splice(2, 0, 'kiwi');
 console.log(minhaArray);
 ```
--	## Remover (ultimo):
+-	## Remover (ultimo): pop
 ```js
 let removeFim = minhaArray.pop();
 console.log(minhaArray);
 ```
--	## Remover (index) -
+-	## Remover (index): splice
 
 ### Remove do indice (2) apenas (1) item.
 ```js
 minhaArray.splice(2, 1);
 console.log(minhaArray);
 ```
--	## Separar - 
+-	## Separar: slice
+```js
+let i
+let primeiraMetade = minhaArray.slice(0, 2);
+let segundaMetade = minhaArray.slice(2, i);
+
+console.log(primeiraMetade);
+console.log(segundaMetade);
+```
+-	## Juntar Arrays: concat
+```js
+let minhaArray = primeiraArray.concat(segundaArray);
+console.log(minhaArray);
+```
+-	## Converter em String:
 ```js
 
 ```
--	## Juntar Arrays -  
--	## Converter em String - 
--	## Inverter Ordem - 
--	## Confirmar Elemento - 
+-	## Inverter Ordem:
+```js
+
+```
+-	## Confirmar Elemento:
+```js
+
+```
+
